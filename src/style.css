@@ -153,6 +153,11 @@ button:hover, .icon:hover {
 	margin-bottom: 20px;
 }
 
+.cart-total{
+	text-align: center;
+	color: #8DCBE6;
+}
+
 span{
 	font-size: 24px;
 	color: #82C3EC;
@@ -161,4 +166,9 @@ span{
 
 .no-items{
 	margin-top: 50px;
+}
+
+.price{
+	margin-top: 15px;
+	text-align: end;
 }
