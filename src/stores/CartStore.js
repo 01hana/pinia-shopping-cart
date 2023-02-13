@@ -82,6 +82,20 @@ export const useCartStore = defineStore('cartStore', {
 				console.log("I clicked minus!")
 				this.products[index].qty--
 			}
+		},
+		plusCart(item) {
+			let index = this.cartItems.findIndex( i => i.id === item.id)
+			if(index !== -1){
+				console.log("I clicked cart plus")
+				this.cartItems[index].qty++
+			}
+		},
+		minusCart(item) {
+			let index = this.cartItems.findIndex( i => i.id === item.id)
+			if(index !== -1){
+				console.log("I clicked cart minus")
+				this.cartItems[index].qty--
+			}
 		}
 	}
 })

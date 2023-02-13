@@ -68,7 +68,7 @@ nav ul li a:hover{
 .card {
 	background-color: #fff;
 	width: fit-content;
-	padding: 60px 40px;
+	padding: 60px 50px;
 	border-radius: 8px;
 	box-shadow: 0 0 8px rgb(223, 221, 221);
 	margin-left: 20px;
@@ -171,4 +171,8 @@ span{
 .price{
 	margin-top: 15px;
 	text-align: end;
+}
+
+.want-to-buy{
+	margin-bottom: 15px;
 }

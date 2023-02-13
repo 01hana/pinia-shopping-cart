@@ -21,8 +21,17 @@ const { cartItems } = storeToRefs(cartStore)
 				<div class="test-outer">
 					<img :src="item.image" alt="img" class="test">
 				</div>
-				<div>
-					I want to buy <span>{{ item.qty }}</span> {{ item.name }}!
+				<div class="want-to-buy">
+					I want to buy {{ item.name }}!
+				</div>
+				<div class="count-wrapper">
+					<button class="icon" @click.prevent="cartStore.minusCart(item)" :disabled="item.qty === 1">
+						<fa icon="minus" />
+					</button>
+					<span>{{ item.qty }}</span>
+					<button class="icon" @click.prevent="cartStore.plusCart(item)">
+						<fa icon="plus" />
+					</button>
 				</div>
 				<div class="price">
 					<span>Total</span>
